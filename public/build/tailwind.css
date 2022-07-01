@@ -433,9 +433,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-2 {
   margin-right: 0.5rem;
 }
-.mb-8 {
-  margin-bottom: 2rem;
-}
 .flex {
   display: flex;
 }
@@ -451,8 +448,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-4 {
   width: 1rem;
 }
-.w-full {
-  width: 100%;
+.auto-cols-auto {
+  grid-auto-columns: auto;
+}
+.grid-flow-col {
+  grid-auto-flow: column;
 }
 .items-center {
   align-items: center;
@@ -498,10 +498,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
-}
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
@@ -577,13 +573,33 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin: 1rem;
   }
 
-  .xl\:flex {
-    display: flex;
+  .xl\:grid {
+    display: grid;
   }
 
-  .xl\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  .xl\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:p-4 {
+    padding: 1rem;
+  }
+
+  .xl\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .xl\:pr-36 {
+    padding-right: 9rem;
+  }
+
+  .xl\:pr-48 {
+    padding-right: 12rem;
+  }
+
+  .xl\:pr-40 {
+    padding-right: 10rem;
   }
 }
