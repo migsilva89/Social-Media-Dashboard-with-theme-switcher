@@ -447,6 +447,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-2 {
   margin-right: 0.5rem;
 }
+.mr-1 {
+  margin-right: 0.25rem;
+}
 .flex {
   display: flex;
 }
@@ -462,6 +465,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-4 {
   height: 1rem;
 }
+.h-5 {
+  height: 1.25rem;
+}
 .w-screen {
   width: 100vw;
 }
@@ -470,6 +476,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-4 {
   width: 1rem;
+}
+.w-5 {
+  width: 1.25rem;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -483,11 +492,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .items-center {
   align-items: center;
 }
+.items-baseline {
+  align-items: baseline;
+}
 .justify-center {
   justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -532,12 +547,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-8 {
   padding: 2rem;
 }
-.p-9 {
-  padding: 2.25rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
@@ -557,9 +569,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-center {
   text-align: center;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -573,9 +585,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold {
   font-weight: 700;
@@ -586,6 +598,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .text-green-600 {
   --tw-text-opacity: 1;
@@ -694,6 +710,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin: 1rem;
   }
 
+  .xl\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .xl\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .xl\:mx-9 {
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+  }
+
   .xl\:grid {
     display: grid;
   }
@@ -708,19 +739,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 1rem;
   }
 
+  .xl\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
   .xl\:pt-10 {
     padding-top: 2.5rem;
   }
 
-  .xl\:pr-36 {
-    padding-right: 9rem;
-  }
-
-  .xl\:pr-48 {
-    padding-right: 12rem;
+  .xl\:pr-28 {
+    padding-right: 7rem;
   }
 
   .xl\:pr-40 {
     padding-right: 10rem;
+  }
+
+  .xl\:pr-32 {
+    padding-right: 8rem;
   }
 }
