@@ -531,10 +531,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-top-color: hsl(203 89% 53% / var(--tw-border-opacity));
 }
-.border-t-instagram {
-  --tw-border-opacity: 1;
-  border-top-color: hsl(329 70% 58% / var(--tw-border-opacity));
-}
 .border-t-youtube {
   --tw-border-opacity: 1;
   border-top-color: hsl(348 97% 39% / var(--tw-border-opacity));
@@ -550,6 +546,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .from-toggle1 {
   --tw-gradient-from: hsl(210, 78%, 56%);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, hsl(210 78% 56% / 0));
+}
+.from-instagram {
+  --tw-gradient-from: hsl(329, 70%, 58%);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, hsl(329 70% 58% / 0));
 }
 .p-6 {
   padding: 1.5rem;
