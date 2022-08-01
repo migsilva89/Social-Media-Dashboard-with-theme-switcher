@@ -8,21 +8,24 @@
     <title>Social Media Dashboard with theme switcher</title>
 </head>
 
-<body class="h-full dark:bg-gray-900 w-screen flex items-center justify-center mt-8">
-    <div class="">
+<body class="h-full dark:bg-bgDark w-screen flex items-center justify-center xl:mt-8 mb-8">
+    <div class="mx-8">
 
-        <header class="pb-4 xl:m-4 xl:mx-10 mt-8">
-            <h1 class="font-bold text-2xl dark:text-white">Social Media Dashboard</h1>
-            <h2 class="text-xs font-bold text-gray-600 pb-4">Total Followers: 23,004</h2>
-            <hr>
-            <div class="flex items-center justify-between pt-4">
-                <h2 class="font-bold text-gray-900 dark:text-white text-xs">Dark Mode</h2>
+        <header class="pb-4 xl:m-4 xl:mx-10 mt-8 xl:flex xl:justify-between">
+            <div>
+                <h1 class="text-black font-bold text-4xl dark:text-white">Social Media Dashboard</h1>
+                <h2 class="text-sm font-bold text-blueTextLight dark:text-blueTextDark pb-4">Total Followers: 23,004</h2>
+            </div>
+            
+            <hr class="xl:hidden dark:text-blueTextLight">
+            <div class=" text-blueTextLight dark:text-blueTextDark flex items-center justify-between pt-4">
+                <h2 class="xl:pb-1 xl:pr-4 font-bold text-blueTextLight dark:text-blueTextDark text-md">Dark Mode</h2>
 
                 <!-- DARKMODE  BTN-->
-                <div class="font-bold text-gray-600 text-xs">
+                <div class="font-bold text-blueTextLight dark:text-blueTextDark text-xs">
                     <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
                         <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
-                        <span class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gradient-to-r from-indigo-500 "></span>
+                        <span class="w-11 h-6 bg-toggleLight rounded-full peer dark:bg-toggle2 peer-checked:after:translate-x-full peer-checked:after:bg-bgDark after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-toggleLight after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-bgDark peer-checked:bg-gradient-to-r from-toggle1 "></span>
                     </label>
                 </div>
                 
@@ -32,124 +35,124 @@
         <!-- FIRST 4 CARDS -->
         <main>
             <div class="xl:grid grid-flow-col auto-cols-auto justify-center xl:mx-5">
-                <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md border-t-blue-500 border-t-4 p-6 px-16 text-center xl:m-4">
+                <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md border-t-facebook border-t-4 p-6 xl:px-16 text-center xl:m-4 xl:py-8">
                     <div class="flex justify-center items-center pb-4">
-                        <img class="mr-2 w-4 h-4" src="./images/icon-facebook.svg" alt="facebook icon">
-                        <p class="font-bold text-xs text-gray-600"> @nathandf</p>
+                        <img class="mr-2 w-5 h-5" src="./images/icon-facebook.svg" alt="facebook icon">
+                        <p class="font-bold text-xs text-blueTextLight dark:text-blueTextDark"> @nathandf</p>
                     </div>
                     <p class="font-bold text-6xl dark:text-white">1987</p>
-                    <p class="text-gray-600 text-xs tracking-widest">FOLLOWERS</p>
+                    <p class="text-blueTextLight dark:text-blueTextDark text-xs tracking-widest pt-2">FOLLOWERS</p>
                     <div class="flex justify-center items-center pt-6">
                         <img class="pr-2" src="./images/icon-up.svg" alt="icon arrow up">
-                        <p class="text-xs font-bold text-green-600">12 Today</p>
+                        <p class="text-xs font-bold text-limeGreen">12 Today</p>
                     </div>
                 </div>
-                <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md border-t-blue-400 border-t-4 p-6 px-16 text-center xl:m-4">
+                <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md border-t-twitter border-t-4 p-6 px-16 text-center xl:m-4 xl:py-8">
                     <div class="flex justify-center items-center pb-4">
-                        <img class="pr-2" src="./images/icon-twitter.svg" alt="icon-twitter">
-                        <p class="font-bold text-xs text-gray-600">@nathandf</p>
+                        <img class="pr-2 w-8 h-5" src="./images/icon-twitter.svg" alt="icon-twitter">
+                        <p class="font-bold text-xs text-blueTextLight dark:text-blueTextDark">@nathandf</p>
                     </div>
                     <p class="font-bold text-6xl dark:text-white">1044</p>
-                    <p class="text-gray-600 text-xs tracking-widest">FOLLOWERS</p>
+                    <p class="text-blueTextLight dark:text-blueTextDark text-xs tracking-widest pt-2">FOLLOWERS</p>
                     <div class="flex justify-center items-center pt-6">
                         <img class="pr-2" src="./images/icon-up.svg" alt="icon-up.svg">
-                        <p class="text-xs font-bold text-green-600">99 Today</p>
+                        <p class="text-xs font-bold text-limeGreen">99 Today</p>
                     </div>
                 </div>
-                <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md border-t-orange-500 border-t-4 p-6 px-16 text-center xl:m-4">
+                <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md border-t-instagram border-t-4 p-6 px-16 text-center xl:m-4 xl:py-8">
                     <div class="flex justify-center items-center pb-4">
-                        <img class="pr-2" src="./images/icon-instagram.svg" alt="icon-instagram">
-                        <p class="font-bold text-xs text-gray-600">@realnathandf</p>
+                        <img class="pr-2 w-7 h-5" src="./images/icon-instagram.svg" alt="icon-instagram">
+                        <p class="font-bold text-xs text-blueTextLight dark:text-blueTextDark">@realnathandf</p>
                     </div>
                     <p class="font-bold text-6xl dark:text-white">11k</p>
-                    <p class="text-gray-600 text-xs tracking-widest">FOLLOWERS</p>
+                    <p class="text-blueTextLight dark:text-blueTextDark text-xs tracking-widest pt-2">FOLLOWERS</p>
                     <div class="flex justify-center items-center pt-6">
-                        <img src="./images/icon-up.svg" alt="icon-up">
-                        <p class="text-xs font-bold text-green-600">1099 Today</p>
+                        <img class="pr-2" src="./images/icon-up.svg" alt="icon-up">
+                        <p class="text-xs font-bold text-limeGreen">1099 Today</p>
                     </div>
                 </div>
-                <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md border-t-red-500 border-t-4 p-6 px-16 text-center xl:m-4">
+                <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md border-t-youtube border-t-4 p-6 px-14 text-center xl:m-4 xl:py-8">
                     <div class="flex justify-center items-center pb-4">
-                        <img class="pr-2" src="./images/icon-youtube.svg" alt="icon-youtube">
-                        <p class="font-bold text-xs text-gray-600">Nathan F.</p>
+                        <img class="pr-2 w-7 h-5" src="./images/icon-youtube.svg" alt="icon-youtube">
+                        <p class="font-bold text-xs text-blueTextLight dark:text-blueTextDark">Nathan F.</p>
                     </div>
                     <p class="font-bold text-6xl dark:text-white">8239</p>
-                    <p class="text-gray-600 text-xs tracking-widest">SUBSCRIBERS</p>
+                    <p class="text-blueTextLight dark:text-blueTextDark text-xs tracking-widest pt-2">SUBSCRIBERS</p>
                     <div class="flex justify-center items-center pt-6">
                         <img class="pr-2" src="./images/icon-down.svg" alt="icon-down">
-                        <p class="text-xs font-bold text-red-600">144 Today</p>
+                        <p class="text-xs font-bold text-youtube">144 Today</p>
                     </div>
                 </div>
             </div>
 
             <section class="xl:p-4 pt-8 xl:pt-10 xl:mx-5">
-                <h3 class="font-bold text-gray-500 text-lg">Overview Today</h3>
+                <h3 class="font-bold text-blueTextLight dark:text-blueTextDark text-2xl">Overview Today</h3>
             </section>
 
             <!-- OVERVIEW TOP SECTION -->
             <div class="">
                 <div>
-                    <div class="xl:grid grid-flow-col xl:mx-9 auto-cols-auto justify-center xl:space-x-8">
-                        <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md">
+                    <div class="xl:grid grid-flow-col xl:mx-4 auto-cols-auto justify-center xl:space-x-7">
+                        <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md">
                             <div class="p-8">
                                 <div class="flex justify-between ">
-                                    <h2 class="font-bold xl:pr-28 text-gray-500 text-xs">Page Views</h2>
+                                    <h2 class="font-bold xl:pr-28 text-blueTextLight dark:text-blueTextDark text-xs">Page Views</h2>
                                     <img class="mr-2 w-5 h-5" src="./images/icon-facebook.svg" alt="icon-facebook">
                                 </div>
                                 <div class="flex justify-between items-baseline pt-4">
-                                    <p class="font-bold text-3xl dark:text-white">87</p>
+                                    <p class="font-bold text-4xl dark:text-white">87</p>
                                     <div class="flex items-center">
-                                        <img class="pr-2" src="./images/icon-up.svg" alt="icon-up">
-                                        <p class="text-green-500 font-bold text-xs">2%</p>
+                                        <img class="pr-1" src="./images/icon-up.svg" alt="icon-up">
+                                        <p class="text-limeGreen font-bold text-xs">3%</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
             
-                        <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md">
+                        <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md">
                             <div class="p-8">
                                 <div class="flex justify-between">
-                                    <h2 class="xl:pr-40 font-bold text-gray-500 text-xs">Likes</h2>
+                                    <h2 class="xl:pr-40 font-bold text-blueTextLight dark:text-blueTextDark text-xs">Likes</h2>
                                     <img class="mr-2 w-5 h-5" src="./images/icon-facebook.svg" alt="icon-facebook">
                                 </div>
                                 <div class="flex justify-between items-baseline pt-4">
-                                    <p class="font-bold text-3xl dark:text-white">52</p>
+                                    <p class="font-bold text-4xl dark:text-white">52</p>
                                     <div class="flex items-center">
-                                        <img class="pr-2" src="./images/icon-down.svg" alt="icon-down">
-                                        <p class="text-red-500 font-bold text-xs">2%</p>
+                                        <img class="pr-1" src="./images/icon-down.svg" alt="icon-down">
+                                        <p class="text-youtube font-bold text-xs">2%</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md">
-                            <div class="p-8">
+                        <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md">
+                            <div class="p-8 xl:px-8">
                                 <div class="flex justify-between">
-                                    <h2 class="xl:pr-32 font-bold text-gray-500 text-xs">Likes</h2>
+                                    <h2 class="xl:pr-36 font-bold text-blueTextLight dark:text-blueTextDark text-xs">Likes</h2>
                                     <img class="mr-2 w-5 h-5" src="./images/icon-instagram.svg" alt="icon-instagram">
                                 </div>
                                 <div class="flex justify-between items-baseline pt-4">
-                                    <p class="font-bold text-3xl dark:text-white">5462</p>
+                                    <p class="font-bold text-4xl dark:text-white">5462</p>
                                     <div class="flex items-center">
-                                        <img class="pr-2" src="./images/icon-up.svg" alt="icon-up">
-                                        <p class="text-green-500 font-bold text-xs">2257%</p>
+                                        <img class="pr-1" src="./images/icon-up.svg" alt="icon-up">
+                                        <p class="text-limeGreen font-bold text-xs">2257%</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md">
-                            <div class="p-8">
+                        <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md">
+                            <div class="p-8 xl:px-8">
                                 <div class="flex justify-between">
-                                    <h2 class="xl:pr-28 font-bold text-gray-500 text-xs">Profile Views</h2>
+                                    <h2 class="xl:pr-28 font-bold text-blueTextLight dark:text-blueTextDark text-xs">Profile Views</h2>
                                     <img class="mr-1 w-5 h-5" src="./images/icon-instagram.svg" alt="icon-instagram">
                                 </div>
                                 <div class="flex justify-between items-baseline pt-4">
-                                    <p class="font-bold text-3xl dark:text-white">52k</p>
+                                    <p class="font-bold text-4xl dark:text-white">52k</p>
                                     <div class="flex items-center">
-                                        <img class="pr-2" src="./images/icon-up.svg" alt="icon-up">
-                                        <p class="text-green-500 font-bold text-xs">1375%</p>
+                                        <img class="pr-1" src="./images/icon-up.svg" alt="icon-up">
+                                        <p class="text-limeGreen font-bold text-xs">1375%</p>
                                     </div>
                                 </div>
                             </div>
@@ -158,66 +161,66 @@
 
                     <!-- OVERVIEW B SECTION -->
 
-                    <div class="xl:grid grid-flow-col auto-cols-auto justify-center xl:space-x-8">
-                        <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md">
+                    <div class="xl:grid grid-flow-col auto-cols-auto justify-center xl:space-x-7">
+                        <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md">
                             <div class="p-8 xl:px-9">
                                 <div class="flex justify-between">
-                                    <h2 class="font-bold xl:pr-28 text-gray-500 text-xs">Retweets</h2>
-                                    <img class="mr-2 w-5 h-4" src="./images/icon-twitter.svg" alt="icon-twitter">
+                                    <h2 class="font-bold xl:pr-28 text-blueTextLight dark:text-blueTextDark text-xs">Retweets</h2>
+                                    <img class="mr-2 w-6 h-5" src="./images/icon-twitter.svg" alt="icon-twitter">
                                 </div>
                                 <div class="flex justify-between items-baseline pt-4">
-                                    <p class="font-bold text-3xl dark:text-white">117</p>
+                                    <p class="font-bold text-4xl dark:text-white">117</p>
                                     <div class="flex items-center">
-                                        <img class="pr-2" src="./images/icon-up.svg" alt="icon-up">
-                                        <p class="text-green-500 font-bold text-xs">303%</p>
+                                        <img class="pr-1" src="./images/icon-up.svg" alt="icon-up">
+                                        <p class="text-limeGreen font-bold text-xs">303%</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md">
+                        <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md">
                             <div class="p-8">
                                 <div class="flex justify-between">
-                                    <h2 class="xl:pr-40 font-bold text-gray-500 text-xs">Likes</h2>
-                                    <img class="mr-2 w-5 h-4" src="./images/icon-twitter.svg" alt="icon-twitter">
+                                    <h2 class="xl:pr-40 font-bold text-blueTextLight dark:text-blueTextDark text-xs">Likes</h2>
+                                    <img class="mr-2 w-6 h-5" src="./images/icon-twitter.svg" alt="icon-twitter">
                                 </div>
                                 <div class="flex justify-between items-baseline pt-4">
-                                    <p class="font-bold text-3xl dark:text-white">507</p>
+                                    <p class="font-bold text-4xl dark:text-white">507</p>
                                     <div class="flex items-center">
-                                        <img class="pr-2" src="./images/icon-up.svg" alt="icon-up">
-                                        <p class="text-green-500 font-bold text-xs">553%</p>
+                                        <img class="pr-1" src="./images/icon-up.svg" alt="icon-up">
+                                        <p class="text-limeGreen font-bold text-xs">553%</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md">
-                            <div class="p-8">
+                        <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md">
+                            <div class="p-8 xl:px-8">
                                 <div class="flex justify-between">
-                                    <h2 class="xl:pr-32 font-bold text-gray-500 text-xs">Likes</h2>
+                                    <h2 class="xl:pr-36 font-bold text-blueTextLight dark:text-blueTextDark text-xs">Likes</h2>
                                     <img class="mr-2 w-5 h-5" src="./images/icon-youtube.svg" alt="icon-youtube">
                                 </div>
                                 <div class="flex justify-between items-baseline pt-4">
-                                    <p class="font-bold text-3xl dark:text-white">107</p>
+                                    <p class="font-bold text-4xl dark:text-white">107</p>
                                     <div class="flex items-center">
-                                        <img class="pr-2" src="./images/icon-down.svg" alt="icon-down">
-                                        <p class="text-red-500 font-bold text-xs">19%</p>
+                                        <img class="pr-1" src="./images/icon-down.svg" alt="icon-down">
+                                        <p class="text-youtube font-bold text-xs">19%</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="bg-gray-100 dark:bg-gray-800 mt-4 rounded-md">
-                            <div class="p-8 ">
+                        <div class="bg-cardBgLight dark:bg-cardBgDark mt-4 rounded-md">
+                            <div class="p-8 xl:px-8">
                                 <div class="flex justify-between gap-2">
-                                    <h2 class="xl:pr-28 font-bold text-gray-500 text-xs">Total Views</h2>
+                                    <h2 class="xl:pr-28 font-bold text-blueTextLight dark:text-blueTextDark text-xs">Total Views</h2>
                                     <img class="mr-1 w-5 h-5" src="./images/icon-youtube.svg" alt="icon-youtube">
                                 </div>
                                 <div class="flex justify-between items-baseline pt-4">
-                                    <p class="font-bold text-3xl dark:text-white">1407</p>
+                                    <p class="font-bold text-4xl dark:text-white">1407</p>
                                     <div class="flex items-center">
-                                        <img class="pr-2" src="./images/icon-down.svg" alt="Icon arrow down">
-                                        <p class="text-red-500 font-bold text-xs">12%</p>
+                                        <img class="pr-1" src="./images/icon-down.svg" alt="Icon arrow down">
+                                        <p class="text-youtube font-bold text-xs">12%</p>
                                     </div>
                                 </div>
                             </div>
